@@ -29,11 +29,11 @@ Saya memilih metode Forward Chaining karena dalam kasus ini karena pengguna (pet
 
 ## Uji Kasus
 ### Kasus 1
-Jawaban 'y' pada pertanyaan nomor 1, 2, dan 3 (gejala antraknosa). Hasil: antraknosa.
+Jawaban 'y' pada pertanyaan nomor 1, 3, dan 4 (gejala antraknosa). Hasil: antraknosa.
 ![Benar 1](Screenshot/True1.png)
 
 ### Kasus 2
-Jawaban 'y' pada pertanyaan nomor 4 sampai 9 (gejala virus kuning dan layu fusarium). Hasil: dua kesimpulan sekaligus.
+Jawaban 'y' pada pertanyaan nomor 1 sampai 6 (gejala virus kuning dan atraknosa). Hasil: dua kesimpulan sekaligus yaitu virus kuning dan atraknosa.
 ![Benar 2](Screenshot/True2.png)
 
 ### Kasus 3
