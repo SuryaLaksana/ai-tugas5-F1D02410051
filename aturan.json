@@ -1,0 +1,17 @@
+{
+  "judul": "Diagnosa penyakit pada tanaman cabai",
+  "batas": "Aturan berasal dari 3 jurnal sistem pakar penyakit cabai di Indonesia (JuPerSaTeK 2019, Comasie 2021, JIKA 2024) dan hanya mencakup antraknosa, virus kuning, dan layu fusarium berdasarkan gejala yang terlihat. Layu bakteri, bercak daun, rebah kecambah, busuk daun, mosaik virus, dan hama tidak dicakup. Aturan antraknosa dari S3 aslinya dipakai bersama Certainty Factor; di sini dijalankan sebagai forward chaining tanpa bobot keyakinan. Hasilnya saran awal, bukan keputusan akhir; konfirmasikan dengan penyuluh atau dinas pertanian.",
+  "sumber": {
+    "S1": "Irnaldi, R. Sistem Pakar Diagnosa Penyakit Tanaman Cabai Menggunakan Metode Forward Chaining Berbasis Android. JuPerSaTeK (Jurnal Perencanaan, Sains, Teknologi, dan Komputer) Vol.2 No.1, Juli 2019, hal. 165-174, Universitas Islam Kuantan Singingi (URL/DOI tidak tercantum pada naskah)",
+    "S2": "Gultom, H. H., & Yenni, Y. Sistem Pakar Mendiagnosa Penyakit Padatanaman Cabe Berbasis Web. Jurnal Comasie Vol.5 No.3, 2021, hal. 25-35, Universitas Putera Batam, http://ejournal.upbatam.ac.id/index.php/comasiejournal",
+    "S3": "Jamaludin, M. L., Bhakti, R. M. H., & Irawan, B. Expert System Hama Penyakit Cabai Menggunakan Metode Forward Chaining dan Certainty Factor Berbasis Website. JIKA (Jurnal of Informatics) Vol.8 No.3, Juli 2024, hal. 318-325, Universitas Muhammadiyah Tangerang, https://doi.org/10.31000/jika.v8i3.11847"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["bercak kecil coklat kehitaman pada buah", "buah menjadi keriput"], "mode": "dan", "maka": "buah bercak dan keriput", "sumber": "S3"},
+    {"id": "R2", "jika": ["buah bercak dan keriput", "warna kulit buah seperti jerami padi"], "mode": "dan", "maka": "antraknosa", "sumber": "S3"},
+    {"id": "R3", "jika": ["pucuk daun berubah menjadi kuning jelas", "tulang daun menebal dan daun menggulung ke atas"], "mode": "dan", "maka": "daun kuning menggulung", "sumber": "S1"},
+    {"id": "R4", "jika": ["daun kuning menggulung", "tanaman kerdil dan tidak berbuah"], "mode": "dan", "maka": "virus kuning", "sumber": "S1"},
+    {"id": "R5", "jika": ["tulang daun bagian atas memucat", "tangkai menunduk"], "mode": "dan", "maka": "daun atas pucat dan tangkai menunduk", "sumber": "S2"},
+    {"id": "R6", "jika": ["daun atas pucat dan tangkai menunduk", "busuk basah pada berkas pembuluh apabila perbatasan antara akar dan batang dipotong atau dikelupas"], "mode": "dan", "maka": "layu fusarium", "sumber": "S2"}
+  ]
+}
